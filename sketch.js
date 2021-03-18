@@ -113,7 +113,7 @@ function mouseDragged(){
     //if the bird is still on the slingshot then...
     if (gameState!=="launched"){
         //take the bird on the slingshot and set it's position to the mouse's
-        Matter.Body.setPosition(birds[birds.length-1], {x: mouseX , y: mouseY});
+        Matter.Body.setPosition(birds[birds.length-1].body, {x: mouseX , y: mouseY});
         //use a force to propel it forward
         Matter.Body.applyForce(birds[birds.length-1].body, birds[birds.length-1].body.position, {x: 5, y: -5})
        // clickSound.play();
