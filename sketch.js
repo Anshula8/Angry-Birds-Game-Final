@@ -69,8 +69,12 @@ function setup(){
 
 function draw(){
     //if backgroundImg exists, make the background that image
-    if(backgroundImg)
+    if(backgroundImg){
         background(backgroundImg);
+    }
+    else{
+        background(black)
+    }
     
     //display the score(which is the amount of pigs killed)
     noStroke();
