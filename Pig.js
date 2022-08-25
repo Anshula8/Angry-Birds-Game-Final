@@ -23,7 +23,7 @@ class Pig extends BaseClass {
   score(){
     if (this.Visiblity < 0 && this.Visiblity > -1){
       score++;
-      score=score-198;
+      //score=score-198;
     }
     if(this.Visiblity<0 && this.Visiblity>-50){
       snortSound.play();
