@@ -73,7 +73,7 @@ function draw(){
         background(backgroundImg);
     }
     else{
-        background(black)
+        background('black')
     }
     
     //display the score(which is the amount of pigs killed)
