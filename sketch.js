@@ -160,7 +160,7 @@ function keyPressed(){
 
 //change the background based on the time
 async function getBackgroundImg(){
-     var response = await fetch("http://worldtimeapi.org/api/timezone/America/Bogota");
+     var response = await fetch("http://worldtimeapi.org/api/timezone/America/Kentucky/Louisville/");
      var responseJSON = await response.json();
 
      var datetime = responseJSON.datetime;
